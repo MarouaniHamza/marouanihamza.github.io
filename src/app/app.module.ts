@@ -5,12 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ProfileModule } from './profile/profile.module';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, MenuComponent],
-  imports: [BrowserModule, AppRoutingModule, ProfileModule],
+  declarations: [
+    AppComponent,
+    FooterComponent,
+    MenuComponent,
+    ProfileComponent,
+    AboutMeComponent,
+    MyPortfolioComponent,
+    ContactMeComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
