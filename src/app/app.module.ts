@@ -11,7 +11,6 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +20,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     AboutMeComponent,
     MyPortfolioComponent,
     ContactMeComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
