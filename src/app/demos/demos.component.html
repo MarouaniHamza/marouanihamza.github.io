@@ -1,0 +1,20 @@
+<div class="tab-pane active text-center gallery" id="demos">
+    <div class="d-flex flex-column justify-content-center">
+        <div class="d-flex flex-row justify-content-center">
+          <div class="p-2" *ngFor="let demoElement of myDemos.values()">
+            <div class="card">
+              <img src="assets/img/JavaScript-Logo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{demoElement.title}}</h5>
+                <p class="card-text">{{demoElement.description}}</p>
+                <button type="button" (click)="openDemo(demoElement.path)" class="btn btn-success">Open demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <app-demo-details></app-demo-details>
+        </div>
+    </div>
+</div>
+

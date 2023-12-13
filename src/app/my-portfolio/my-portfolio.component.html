@@ -1,27 +1,19 @@
 <div class="row">
   <div class="col-md-6 ml-auto mr-auto">
     <div class="profile-tabs">
-      <ul
-        class="nav nav-pills nav-pills-icons justify-content-center"
-        role="tablist"
-      >
+      <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
         <li class="nav-item">
-          <a
-            class="nav-link active"
-            href="#studio"
-            role="tab"
-            data-toggle="tab"
-          >
+          <a class="nav-link active" (click)="goToTab('demos')" role="tab" data-toggle="tab">
             <i class="material-icons">palette</i> Demos
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#works" role="tab" data-toggle="tab">
+          <a class="nav-link" (click)="goToTab('works')" role="tab" data-toggle="tab">
             <i class="material-icons">description</i> resume
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#favorite" role="tab" data-toggle="tab">
+          <a class="nav-link" (click)="goToTab('favorite')" role="tab" data-toggle="tab">
             <i class="material-icons">favorite</i> Favorite
           </a>
         </li>
@@ -30,79 +22,5 @@
   </div>
 </div>
 <div class="tab-content tab-space">
-  <div class="tab-pane active text-center gallery" id="studio">
-    <div class="d-flex flex-column justify-content-center">
-      <div class="d-flex flex-row justify-content-center">
-        <div class="p-2" *ngFor="let demoElement of myPortFolioDemos.values()">
-          <div class="card">
-            <img src="assets/img/JavaScript-Logo.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{demoElement.title}}</h5>
-              <p class="card-text">{{demoElement.description}}</p>
-              <button type="button" (click)="openDemo(demoElement.path)" class="btn btn-success">Open demo</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-          <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-  <div class="tab-pane text-center gallery" id="works">
-    <div class="row">
-      <div class="col-md-3 ml-auto">
-        <img
-          src="material-kit-assets/img/examples/olu-eletu.jpg"
-          class="rounded"
-        />
-        <img
-          src="material-kit-assets/img/examples/clem-onojeghuo.jpg"
-          class="rounded"
-        />
-        <img
-          src="material-kit-assets/img/examples/cynthia-del-rio.jpg"
-          class="rounded"
-        />
-      </div>
-      <div class="col-md-3 mr-auto">
-        <img
-          src="material-kit-assets/img/examples/mariya-georgieva.jpg"
-          class="rounded"
-        />
-        <img
-          src="material-kit-assets/img/examples/clem-onojegaw.jpg"
-          class="rounded"
-        />
-      </div>
-    </div>
-  </div>
-  <div class="tab-pane text-center gallery" id="favorite">
-    <div class="row">
-      <div class="col-md-3 ml-auto">
-        <img
-          src="material-kit-assets/img/examples/mariya-georgieva.jpg"
-          class="rounded"
-        />
-        <img
-          src="material-kit-assets/img/examples/studio-3.jpg"
-          class="rounded"
-        />
-      </div>
-      <div class="col-md-3 mr-auto">
-        <img
-          src="material-kit-assets/img/examples/clem-onojeghuo.jpg"
-          class="rounded"
-        />
-        <img
-          src="material-kit-assets/img/examples/olu-eletu.jpg"
-          class="rounded"
-        />
-        <img
-          src="material-kit-assets/img/examples/studio-1.jpg"
-          class="rounded"
-        />
-      </div>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </div>

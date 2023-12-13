@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params,Router} from '@angular/router';
-import { DEMOS } from '../models/demos';
+import { DEMOS } from '../../models/demos';
 
 @Component({
   selector: 'app-demo-details',

@@ -9,7 +9,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProfileComponent } from './profile/profile.component';
-import { DemoDetailsComponent } from './demo-details/demo-details.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
 
@@ -22,7 +21,6 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     AboutMeComponent,
     MyPortfolioComponent,
     ContactMeComponent,
-    DemoDetailsComponent,
     ErrorPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule],

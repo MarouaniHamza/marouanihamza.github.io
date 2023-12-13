@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import {DEMOS } from '../models/demos';
 
@@ -7,16 +7,17 @@ import {DEMOS } from '../models/demos';
   templateUrl: './my-portfolio.component.html',
   styleUrls: ['./my-portfolio.component.css'],
 })
-export class MyPortfolioComponent {
-  
-  myPortFolioDemos = DEMOS;
+export class MyPortfolioComponent implements OnInit{
 
   constructor(private router: Router){
 
   }
 
-  openDemo(path: string){
-    this.router.navigate(['/demo-details', path], {skipLocationChange: true});
+  ngOnInit(): void {
+    this.router.navigate(['/demos'], {skipLocationChange: true});
   }
 
+  goToTab(path: string){
+   this.router.navigate([path], {skipLocationChange: true});
+  }
 }
