@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DEMOS } from '../models/demos';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-demos',
@@ -10,10 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class DemosComponent {
   myDemos = DEMOS;
 
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-  ) {}
+  constructor(private router: Router) {}
 
   openDemo(path: string) {
     this.router.navigate(['/demos', path], { skipLocationChange: true });
