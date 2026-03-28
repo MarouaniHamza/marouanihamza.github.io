@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmarouanihamza_github_io=self.webpackChunkmarouanihamza_github_io||[]).push([[936],{936:(_,o,t)=>{t.r(o),t.d(o,{DemosModule:()=>i});var u=t(952),n=t(895),s=t(256);let i=(()=>{class a{static#t=this.\u0275fac=function(m){return new(m||a)};static#a=this.\u0275mod=s.oAB({type:a});static#o=this.\u0275inj=s.cJS({imports:[n.ez,u.s]})}return a})()}}]);
