@@ -13,6 +13,6 @@ export class DemosComponent {
   constructor(private router: Router) {}
 
   openDemo(path: string) {
-    this.router.navigate(['/demos', path], { skipLocationChange: true });
+    this.router.navigate(['/demos', path]);
   }
 }

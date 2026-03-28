@@ -10,10 +10,10 @@ export class MyPortfolioComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.router.navigate(['/demos'], { skipLocationChange: true });
+    this.router.navigate(['/demos']);
   }
 
   goToTab(path: string) {
-    this.router.navigate([path], { skipLocationChange: true });
+    this.router.navigate([path]);
   }
 }

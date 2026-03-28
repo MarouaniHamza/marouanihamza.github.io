@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorPageComponent } from '../error-page/error-page.component';
 import { DemosRoutingModule } from '../demos/modules/demos-routing.module';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: 'demos',
     loadChildren: () =>
